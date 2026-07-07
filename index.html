@@ -19,8 +19,8 @@
         .logo-container {
             position: relative;
             /* Adjust width and height to match your SVG's viewBox/dimensions */
-            width: 200mm; 
-            height: 200mm;
+            width: 300mm; 
+            height: 300mm;
             max-width: 100vw;
             max-height: 100vh;
         }
@@ -46,10 +46,27 @@
         .layer-1 { animation-delay: 0.5s; }
         .layer-2 { animation-delay: 1.5s; }
         .layer-3 { animation-delay: 2.5s; }
+    /* --- OPTION 2: Pure CSS Explode Hover Effect --- */
+        
+        /* 1. Add a smooth transition to the existing layers */
+        .logo-layer {
+            transition: transform 3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        /* 2. When the container is hovered, shift the layers */
+        .logo-container:hover .layer-1 {
+            transform: translate(-15px, -15px);
+        }
+        .logo-container:hover .layer-2 {
+            /* If you add a middle layer later, it stays in the center */
+            transform: translate(0px, 0px); 
+        }
+        .logo-container:hover .layer-3 {
+            transform: translate(15px, 15px);
+        }
     </style>
 </head>
 <body>
-
     <div class="logo-container">
         
         <div class="logo-layer layer-1">
