@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 <style>
 body {
-background-color: #0f3d1a;
+background-color: #081703ff;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -161,7 +161,6 @@ transition-delay: 0s !important;
 
 <div class="branches">
 <div class="branch" style="--angle: 0deg;" onclick="openGreenScreen('Oil Change Services')">Oil Change Services</div>
-<div class="branch" style="--angle: 45deg;" onclick="openGreenScreen('Physical Home Security')">Physical Home Security</div>
 <div class="branch" style="--angle: 90deg;" onclick="openGreenScreen('Custom Fine Arts')">Custom Fine Arts</div>
 <div class="branch" style="--angle: 135deg;" onclick="openGreenScreen('Music Production')">Music Production</div>
 <div class="branch" style="--angle: 180deg;" onclick="openGreenScreen('Software Development')">Software Development</div>
@@ -219,7 +218,7 @@ document.body.classList.add('activated', 'instant');
 // 4s after load, pin the logo to the top and reveal the branches permanently below it
 setTimeout(() => {
 document.body.classList.add('activated');
-}, 4000);
+}, 2000);
 }
 
 // Updated screen generator to match off-white logo colors instead of gold
